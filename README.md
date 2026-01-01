@@ -24,3 +24,16 @@ To use a real MySQL database, create a `.env` file with the following variables:
 - `DB_USER`
 - `DB_PASSWORD`
 - `DB_NAME`
+aws-two-tier-architecture/
+│
+├── lokah/
+│   ├── public/
+│   ├── .gitignore
+│   ├── db.js
+│   ├── package.json
+│   ├── package-lock.json
+│   └── server.js
+│
+├── README.md
+├── REPORT.pdf
+└── VIDEO.mov
