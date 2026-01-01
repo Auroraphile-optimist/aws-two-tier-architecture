@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOKHA - Wall</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="wall-container">
+        <header class="wall-header">
+            <h2 style="font-size: 1.5rem; letter-spacing: 0.1em; opacity: 0.8;">The Wall</h2>
+        </header>
+
+        <div id="entry-list">
+            <!-- Entries injected here -->
+            <div style="text-align:center; color: var(--color-text-muted); padding: 2rem;">
+                listening...
+            </div>
+        </div>
+    </div>
+
+    <nav class="nav-dots">
+        <div class="nav-dot active" title="Wall"></div>
+        <div class="nav-dot" title="Write" onclick="window.location.href='write.html'"></div>
+    </nav>
+
+    <script src="app.js"></script>
+    <script>
+        // Init wall specific logic
+        window.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('wall-container');
+            container.style.opacity = '1';
+            container.classList.add('fade-in');
+            loadEntries();
+        });
+    </script>
+</body>
+
+</html>
